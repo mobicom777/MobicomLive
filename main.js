@@ -13,4 +13,3 @@ ows.net/7        {
                 "type": "application/vnd.ms-sstr+xml"
         }
 ]);
-
