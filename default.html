@@ -18,44 +18,7 @@
                         -webkit-transition: opacity ease 0.5s;
                   }
             </style>
-        
-       
-<div id="video-viewport">
-        <video id="azuremediaplayer" class="azuremediaplayer amp-default-skin" width="100%" height="100%"> </video>
-            <script>
-                  var myOptions = {
-                        heuristicProfile: "HighQuality",
-                        techOrder: ["azureHtml5JS", "html5", "flashSS", "silverlightSS", ],
-                        "nativeControlsForTouch": false,
-                        autoplay: true,
-                        controls: false,
-                        poster: “yourPoster.jpg",
-                        logo: { enabled: false }
-                  };
- 
- 
-                var myPlayer = amp("azuremediaplayer", myOptions, function () {
-                        //resize-to-fit handler code goes here if you’re doing full screen background video
-                  });
- 
-                  //Register for events after intialization not in Ready function to ensure all event are captured
-                  myPlayer.addEventListener(amp.eventName.play, _ampEventHandler);
-                  myPlayer.addEventListener(amp.eventName.ended, _ampEventHandler);
-           
-                  myPlayer.src([
-                        { src: "http://mobicom.streaming.mediaservices.windows.net/93cc415a-41fb-43e7-853b-129341508a55/099c7357-ce27-4ed7-98e2-111a1ba455c4.ism/manifest" },
-                  ]);
- 
-                  function _ampEventHandler(evt) {
-                        if ("play" == evt.type) {
-                              $('#video-viewport').css("opacity", "1");
-                        }
-                        if ("ended" == evt.type) {
-                              myPlayer.play();
-                        }
-                  }
-            </script>
-      </div>
-        
+   
+      
 </body>
 
