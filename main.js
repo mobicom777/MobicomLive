@@ -1,6 +1,4 @@
-<div id="video-viewport">
-        <video id="azuremediaplayer" class="azuremediaplayer amp-default-skin" width="100%" height="100%"> </video>
-            <script>
+
                   var myOptions = {
                         heuristicProfile: "HighQuality",
                         techOrder: ["azureHtml5JS", "html5", "flashSS", "silverlightSS", ],
@@ -31,5 +29,4 @@
                               myPlayer.play();
                         }
                   }
-            </script>
-      </div>
+     
