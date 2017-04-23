@@ -7,7 +7,6 @@
                         "nativeControlsForTouch": false,
                         autoplay: true,
                         controls: false,
-                        poster: “yourPoster.jpg",
                         logo: { enabled: false }
                   };
  
